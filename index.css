@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro-section {
+    background-image: url('./images/hero.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensure the section takes up at least the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Text color */
+}
+
+.intro-section .container {
+    text-align: left; /* Align text content to the left */
+}
+
+.intro-section h1,
+.intro-section p,
+.intro-section a {
+    text-align: left; /* Ensure all text is left-aligned */
+}
+
+  .mission-section,
+  .vision-section {
+      background-color: #4E2D79;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+  }
+
+  #contact {
+    background-color: #2E377F;
+    color: white;
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    margin-top: 20px; 
+}
+
+#contact h2,
+#contact h4,
+#contact p {
+    color: white;
+}

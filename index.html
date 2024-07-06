@@ -5,120 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InspireHub</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body>
-    <div id="navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">InspireHub</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                            Home
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#introduction">Introduction</a></li>
-                            <li><a class="dropdown-item" href="#featured">Featured</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                            Categories
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#categories">Category Listings</a></li>
-                            <li><a class="dropdown-item" href="#resources">Sample Resources</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                            About
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#mission">Mission Statement</a></li>
-                            <li><a class="dropdown-item" href="#contact">Contact Information</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        
-
-        <div id="home">
-            <div id="introduction">
-                <section class="intro-section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 p-5">
-                                <h1>Shaping the Future Together</h1>
-                                <p>At InspireHub, we believe in the power of collaboration and innovation. By fostering a community of forward-thinkers and providing cutting-edge tools and information, we are committed to shaping the future together with you.</p>
-                                <a href="#featured" class="btn btn-primary">Discover our highlighted courses!</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+  <div id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">InspireHub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#introduction">Introduction</a></li>
+                        <li><a class="dropdown-item" href="#featured">Featured</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#categories">Category Listings</a></li>
+                        <li><a class="dropdown-item" href="#resources">Sample Resources</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#mission">Mission Statement</a></li>
+                        <li><a class="dropdown-item" href="#contact">Contact Information</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex ml-auto">
+                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-search" type="submit">Search</button>
+            </form>
         </div>
-          <div id="featured">
-            <section class="container mt-5">
+    </nav>
+</div>
+        
+<div id="home">
+  <div id="introduction">
+      <section class="intro-section">
+          <div class="container">
               <div class="row">
-                <div class="col-12">
-                  <h2 class="text-center">Highlights</h2>
-                  <p class="text-center">Check out our top selling courses!</p>
-                </div>
+                  <div class="col-12 col-lg-6 p-5">
+                      <h1>Shaping the Future Together</h1>
+                      <p>At InspireHub, we believe in the power of collaboration and innovation. By fostering a community of forward-thinkers and providing cutting-edge tools and information, we are committed to shaping the future together with you.</p>
+                      <a href="#featured" class="btn btn-primary custom-button"><strong>Discover our highlighted courses!</strong></a>
+                  </div>
               </div>
-              <div class="row">
-                <div class="col-12 col-md-4 mb-4">
-                  <div class="card h-100">
-                    <img src="./images/featured1.png" class="card-img-top" alt="Card image cap">
-                    <div class="card-body">
+          </div>
+      </section>
+  </div>
+</div>
+<div id="featured">
+  <section class="container mt-5">
+      <div class="row">
+          <div class="col-12">
+              <h2 class="text-center">Highlights</h2>
+              <p class="text-center">Check out our top selling courses!</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+              <div class="card shadow h-100">
+                  <img src="./images/featured1.png" class="card-img-top" alt="Card image cap">
+                  <div class="card-body">
                       <h5 class="card-title">UI/UX Design for Beginners</h5>
                       <p class="card-text">Learn the fundamentals of designing intuitive interfaces that delight users and enhance usability.</p>
-                    </div>
-                    <div class="card-footer">
-                      <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
-                    </div>
+                      <div class="course-details">
+                          <span class="badge badge-info">Free</span>
+                          <span class="badge badge-secondary ml-2">4 hours</span>
+                          <span class="badge badge-warning ml-2">4.5 ★</span>
+                      </div>
                   </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
-                  <div class="card h-100">
-                    <img src="./images/featured2.png" class="card-img-top" alt="Card image cap">
-                    <div class="card-body">
+                  <div class="card-footer">
+                      <a href="#" class="btn btn-primary btn-block rounded-pill">Enroll Now</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+              <div class="card shadow h-100">
+                  <img src="./images/featured2.png" class="card-img-top" alt="Card image cap">
+                  <div class="card-body">
                       <h5 class="card-title">The Complete JavaScript Course 2023: From Zero to Expert!</h5>
                       <p class="card-text">A comprehensive course covering JavaScript fundamentals to advanced topics like asynchronous JavaScript, OOP, and modern ES6+ syntax.</p>
-                    </div>
-                    <div class="card-footer">
-                      <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
-                    </div>
+                      <div class="course-details">
+                          <span class="badge badge-info">$49.99</span>
+                          <span class="badge badge-secondary ml-2">12 hours</span>
+                          <span class="badge badge-warning ml-2">4.8 ★</span>
+                      </div>
                   </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
-                  <div class="card h-100">
-                    <img src="./images/featured3.png" class="card-img-top" alt="Card image cap">
-                    <div class="card-body">
+                  <div class="card-footer">
+                      <a href="#" class="btn btn-primary btn-block rounded-pill">Enroll Now</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+              <div class="card shadow h-100">
+                  <img src="./images/featured3.png" class="card-img-top" alt="Card image cap">
+                  <div class="card-body">
                       <h5 class="card-title">Machine Learning A-Z™: Hands-On Python & R In Data Science</h5>
                       <p class="card-text">This course covers machine learning techniques using both Python and R, providing hands-on exercises and real-life examples.</p>
-                    </div>
-                    <div class="card-footer">
-                      <a href="#" class="btn btn-primary btn-block">Enroll Now</a>
-                    </div>
+                      <div class="course-details">
+                          <span class="badge badge-info">$99.99</span>
+                          <span class="badge badge-secondary ml-2">20 hours</span>
+                          <span class="badge badge-warning ml-2">4.9 ★</span>
+                      </div>
                   </div>
-                </div>
+                  <div class="card-footer">
+                      <a href="#" class="btn btn-primary btn-block rounded-pill">Enroll Now</a>
+                  </div>
               </div>
-            </section>
           </div>
+      </div>
+  </section>
+</div>
           
 
     </div>
@@ -126,7 +137,7 @@
     <div id = "categories-section">
 
         <div id = "resources">
-            <section class="container mt-5">
+            <section class="container mt-5 mb-5">
                 <div class="row">
                   <div class="col-12">
                     <h2 class="text-center">What Students Say</h2>
@@ -176,88 +187,84 @@
         </div>
 
         <div id="categories">
-            <section class="container mt-5 mb-5">
-              <div class="row">
-                <div class="col-12">
-                  <h2 class="text-center mb-3">Explore Our Courses</h2>
-                </div>
+          <section class="container mt-5 mb-5">
+              <div class="row card-row">
+                  <div class="col-12 col-md-4">
+                      <div class="card">
+                          <img src="./images/course1.png" class="card-img-top" alt="Card image cap">
+                          <div class="card-body">
+                              <h5 class="card-title">Programming and Development</h5>
+                              <p class="card-text">Courses covering languages like Python, JavaScript, Java, and frameworks such as React and Angular.</p>
+                          </div>
+                          <div class="card-footer">
+                              <a href="#" class="btn btn-primary btn-block">Join Course</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <div class="card">
+                          <img src="./images/course2.png" class="card-img-top" alt="Card image cap">
+                          <div class="card-body">
+                              <h5 class="card-title">Data Science and Machine Learning</h5>
+                              <p class="card-text">Courses on data analysis, machine learning algorithms, and tools like TensorFlow and pandas.</p>
+                          </div>
+                          <div class="card-footer">
+                              <a href="#" class="btn btn-primary btn-block">Join Course</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <div class="card">
+                          <img src="./images/course3.png" class="card-img-top" alt="Card image cap">
+                          <div class="card-body">
+                              <h5 class="card-title">Web Development</h5>
+                              <p class="card-text">Courses focusing on HTML, CSS, JavaScript, and advanced topics like full-stack development and responsive design.</p>
+                          </div>
+                          <div class="card-footer">
+                              <a href="#" class="btn btn-primary btn-block">Join Course</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <div class="card">
+                          <img src="./images/course4.png" class="card-img-top" alt="Card image cap">
+                          <div class="card-body">
+                              <h5 class="card-title">Business and Entrepreneurship</h5>
+                              <p class="card-text">Courses on marketing, management, finance, and strategies for starting and growing businesses.</p>
+                          </div>
+                          <div class="card-footer">
+                              <a href="#" class="btn btn-primary btn-block">Join Course</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <div class="card">
+                          <img src="./images/course5.png" class="card-img-top" alt="Card image cap">
+                          <div class="card-body">
+                              <h5 class="card-title">Design and Creativity</h5>
+                              <p class="card-text">Courses on graphic design, UI/UX design, video editing, and creative software like Adobe Creative Suite.</p>
+                          </div>
+                          <div class="card-footer">
+                              <a href="#" class="btn btn-primary btn-block">Join Course</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <div class="card">
+                          <img src="./images/course6.png" class="card-img-top" alt="Card image cap">
+                          <div class="card-body">
+                              <h5 class="card-title">Personal Development</h5>
+                              <p class="card-text">Courses covering skills such as communication, leadership, mindfulness, and productivity improvement.</p>
+                          </div>
+                          <div class="card-footer">
+                              <a href="#" class="btn btn-primary btn-block">Join Course</a>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div class="row">
-                <div class="col-12 col-md-4">
-                  <div class="card h-100">
-                    <img src="./images/course1.png" class="card-img-top" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Programming and Development</h5>
-                      <p class="card-text">Courses covering languages like Python, JavaScript, Java, and frameworks such as React and Angular.</p>
-                    </div>
-                    <div class="card-footer">
-                      <a href="#" class="btn btn-primary btn-block">Join Course</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="card h-100">
-                    <img src="./images/course2.png" class="card-img-top" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Data Science and Machine Learning</h5>
-                      <p class="card-text">Courses on data analysis, machine learning algorithms, and tools like TensorFlow and pandas.</p>
-                    </div>
-                    <div class="card-footer">
-                      <a href="#" class="btn btn-primary btn-block">Join Course</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="card h-100">
-                    <img src="./images/course3.png" class="card-img-top" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Web Development</h5>
-                      <p class="card-text">Courses focusing on HTML, CSS, JavaScript, and advanced topics like full-stack development and responsive design.</p>
-                    </div>
-                    <div class="card-footer">
-                      <a href="#" class="btn btn-primary btn-block">Join Course</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="card h-100">
-                    <img src="./images/course4.png" class="card-img-top" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Business and Entrepreneurship</h5>
-                      <p class="card-text">Courses on marketing, management, finance, and strategies for starting and growing businesses.</p>
-                    </div>
-                    <div class="card-footer">
-                      <a href="#" class="btn btn-primary btn-block">Join Course</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="card h-100">
-                    <img src="./images/course5.png" class="card-img-top" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Design and Creativity</h5>
-                      <p class="card-text">Courses on graphic design, UI/UX design, video editing, and creative software like Adobe Creative Suite.</p>
-                    </div>
-                    <div class="card-footer">
-                      <a href="#" class="btn btn-primary btn-block">Join Course</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="card h-100">
-                    <img src="./images/course6.png" class="card-img-top" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Personal Development</h5>
-                      <p class="card-text">Courses covering skills such as communication, leadership, mindfulness, and productivity improvement.</p>
-                    </div>
-                    <div class="card-footer">
-                      <a href="#" class="btn btn-primary btn-block">Join Course</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
+          </section>
+      </div>
+      
           
 
     </div>
@@ -266,7 +273,6 @@
         <div id="mission">
             <section class="container mt-5">
                 <div class="row">
-                    <!-- Mission Section -->
                     <div class="col-md-6 col-lg-6 col-xl-6 order-lg-1 order-xl-1">
                         <div class="mission-section">
                             <h2>Mission</h2>
@@ -278,7 +284,6 @@
                     </div>
                 </div>
                 <div class="row mt-5">
-                    <!-- Vision Section -->
                     <div class="col-md-6 col-lg-6 col-xl-6 order-md-1">
                         <img src="./images/vision.jpg" class="img-fluid" alt="Vision Image">
                     </div>
@@ -294,46 +299,46 @@
     </div>
 
     <div id="contact">
-        <section class="container mt-5">
-            <div class="row">
-                <!-- Left Column - Contact Information -->
-                <div class="col-lg-6 col-md-12">
-                    <h2>Let's Get in Touch!</h2>
-                    <p>Have a question or need assistance? Reach out to us via email, phone, or the contact form below. We're eager to assist you.</p>
-                    <p>Nice hearing from you!</p>
-                    
-                    <!-- Contact Information -->
+      <section class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <h2>Let's Get in Touch!</h2>
+                <p>Have a question or need assistance? Reach out to us via email, phone, or the contact form below. We're eager to assist you.</p>
+                <p>Nice hearing from you!</p>
+                
+                <div class="contact-info">
                     <h4>Contact Information</h4>
                     <p><strong>Address:</strong> 123 Main Street, Cityville, State, Country</p>
                     <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-                    <p><strong>Email:</strong> info@example.com</p>                 
-                </div>
-                
-                <!-- Right Column - Contact Form -->
-                <div class="col-lg-6 col-md-12">
-                    <h2>Contact Us</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="privacy">
-                            <label class="form-check-label" for="privacy">I agree with the privacy policy</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary mb-3">Submit</button>
-                    </form>
+                    <p><strong>Email:</strong> info@example.com</p>
                 </div>
             </div>
-        </section>
+            
+            <div class="col-lg-6 col-md-12">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="privacy">
+                        <label class="form-check-label" for="privacy">I agree with the privacy policy</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
     </div>
           
 
